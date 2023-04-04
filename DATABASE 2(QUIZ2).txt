@@ -1,0 +1,35 @@
+let dbuser = [
+
+
+{
+    username:"harrvvin",
+    password:"123456",
+    name:"hr",
+    email:"harrvvin@utem.edu.my"
+}
+,
+{
+    username:"yuva",
+    password:"123789",
+    name:"yv",
+    email:"yuva@utem.edu.my"
+}
+,
+{
+    username:"ashwini",
+    password:"321456",
+    name:"ash",
+    email:"ashwini@utem.edu.my"
+}
+]
+
+function login (reqUsername, reqPassword){
+    let matchUser = dbuser.find (
+        user => user.username == reqUsername
+    )
+    console.log(matchUser)
+}
+
+//try to login
+login("harrvvin","password")
+login("utem","password")
